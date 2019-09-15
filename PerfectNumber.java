@@ -17,8 +17,8 @@ public class PerfectNumber {
 				sum = sum+i;
 			}
 		}
-		if (sum == n || n==1) return STATE.Perfect;
-		else if (sum > n) return STATE.Abundant;
+		if (sum == n) return STATE.Perfect;
+		else if (sum > n || n==1) return STATE.Abundant;
 		else return STATE.Deficient;		
 	}
 	
