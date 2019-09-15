@@ -18,7 +18,7 @@ public class PerfectNumber {
 			}
 		}
 		if (sum == n) return STATE.Perfect;
-		else if (sum < n || n==1) return STATE.Deficient;
+		else if (sum < n) return STATE.Deficient;
 		else return STATE.Abundant;		
 	}
 	
