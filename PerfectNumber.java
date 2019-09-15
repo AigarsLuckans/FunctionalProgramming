@@ -18,8 +18,8 @@ public class PerfectNumber {
 			}
 		}
 		if (sum == n) return STATE.Perfect;
-		else if (sum > n || n==1) return STATE.Abundant;
-		else return STATE.Deficient;		
+		else if (sum < n || n==1) return STATE.Deficient;
+		else return STATE.Abundant;		
 	}
 	
 	public static void main(String[] args) {
