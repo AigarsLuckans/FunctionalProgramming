@@ -8,10 +8,10 @@ public class Solution {
 			return 0;
 		//x=x%10 +superDigit(superDigit(x/10));
 		//System.out.println(x);
-		if (String.valueOf(x).length()>1) {
+		
 			//x=x%10 +superDigit(superDigit(x/10));
-			x=superDigit(x%10+superDigit(x/10));
-		}
+			x=x%10+superDigit(x/10);
+		
 		
 		return (x);
 	
